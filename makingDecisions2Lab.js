@@ -124,7 +124,10 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 // Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
 //Code Here
-
+for(let i = 0; i < listOfNumbers.length; i++)
+  if(listOfNumbers[i] % 3 === 0) {
+    console.log(listOfNumbers[i] + " is divisible by 3")
+  }
 
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
@@ -137,6 +140,8 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 
 //Code Here
 
+var reversed = letters.reverse();
+console.log('reversed:', reversed);
 
 ////////// Advanced Problems //////////
 
@@ -159,6 +164,25 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 
 //Code Here
 
+switch (letterGrade) {
+  case 'A':
+    text = 'The student is doing excellently';
+    break;
+  case 'B':
+    text = 'The student is doing well';
+    break;
+  case 'C':
+    text = 'The student is doing alright';
+    break;
+  case 'D':
+    text = 'The student is not doing very well';
+    break;
+  case 'F':
+    text = 'The student is failing.';
+    break;
+  default:
+    text = (letterGrade)
+}
 
 
 ////////// PROBLEM 11 //////////
@@ -186,3 +210,16 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
+
+for(i = 1; i <= 101; i++) {
+  if(i % 3 === 0) {
+    console.log("Dev");
+  } else if(i % 5 === 0) {
+    console.log("mountain");
+  } else if(i % 5 === 0 || i % 3 ===0) {
+    console.log("Devmountain");
+  }else{
+    (console.log(i))
+  }
+    
+}
